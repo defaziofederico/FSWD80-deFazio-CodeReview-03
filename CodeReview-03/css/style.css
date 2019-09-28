@@ -1,0 +1,242 @@
+#header1 {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-color: #ffcccc;
+    width: 88%;
+    padding-left: 10px;
+
+}
+
+@media only screen and (max-width: 480px) {
+    #header1 .nav #upperlogo {
+        display: none;
+    }
+}
+
+.nav {
+    background-color: black;
+    width: 90%;
+
+}
+
+#upperlogo {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* -------------------------------------LINKS-----------------------------------------------------
+ */
+a:link {
+    color: white;
+    list-style: none;
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: bold;
+    word-spacing: 5px;
+    list-style: none;
+}
+
+a:visited {
+    color: white;
+}
+
+a:hover {
+    color: white;
+}
+
+a:active {
+    color: white;
+}
+
+.list {
+    background-color: black;
+    color: white;
+}
+
+/* ------------------------------------ACTUAL BODY------------------------------------------- */
+
+
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    padding: 3px;
+
+    @media only screen and (max-width: 480px) {
+        .container {
+            display: none;
+        }
+    }
+
+}
+
+
+.container div {
+    background-color: black;
+    color: white;
+    margin: 3px;
+}
+
+#imagecontainer {
+    position: relative;
+    opacity: 0.6;
+}
+
+@media only screen and (max-width: 480px) {
+    #imagecontainer {
+        display: none;
+    }
+}
+
+#textblock {
+    position: absolute;
+    font-size: 1em;
+    font-weight: bold;
+    top: 20px;
+    left: 20px;
+    color: white;
+    padding-left: 2px;
+    padding-right: 2px;
+
+}
+
+@media only screen and (max-width: 480px) {
+    #textblock {
+        display: none;
+    }
+}
+
+#quote {
+    display: flex;
+    flex-direction: column;
+    margin-top: 200px;
+    margin-left: 350px;
+    opacity: 1;
+    font-weight: bold;
+    text-shadow: 1px;
+    border: 2px solid grey;
+    padding-left: 2px;
+    padding-right: 2px;
+}
+
+@media only screen and (max-width: 48px) {
+    #quote {
+        display: none;
+    }
+}
+
+#button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+/* ............................................ */
+#traffic {
+    display: flex;
+    width: 90%;
+    height: 50%;
+}
+
+@media only screen and (max-width: 480px) {
+    #traffic {
+        display: none;
+    }
+}
+
+
+/* ...............................................
+ */
+#uncomplicated {
+    background-color: gray;
+    display: flex;
+    width: 90%;
+    flex-wrap: wrap;
+
+}
+
+@media only screen and (max-width: 480px) {
+    #uncomplicated #comp {
+        display: none;
+        background-color: yellow;
+    }
+}
+
+
+
+#comp {
+    display: flex;
+    flex-direction: column;
+    alignment-baseline: center;
+    margin-left: 450px;
+
+}
+
+#comp:hover {
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
+/* .............................................. */
+#cards {
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    justify-content: space-around;
+
+}
+
+@media only screen and (max-width: 380px) {
+    #cards .flipcards {
+        display: none;
+    }
+}
+
+.flipcards {
+    margin-top: 100px;
+    margin-bottom: 150px;
+    border: 2px solid black;
+}
+
+.flipcards:hover {
+    -webkit-transform: scale(1.3);
+    -ms-transform: scale(1.3);
+    transform: scale(1.3);
+}
+
+.flipcards li {
+    list-style-type: none;
+}
+
+/* ----------------------------------FOOTER------------------------------------------------------ */
+#footercontainer {
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    justify-content: space-between;
+    background-color: black;
+}
+
+@media only screen and (max-width: 380px) {
+    #footercontainer #federico footer p {
+        display: none;
+    }
+}
+
+footer p {
+    display: inline;
+    color: white;
+}
+
+#federico {
+    margin-top: 100px;
+    margin-left: 350px;
+}
