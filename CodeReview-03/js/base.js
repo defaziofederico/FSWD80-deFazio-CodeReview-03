@@ -11,6 +11,8 @@
 
 	
 
+
+
 // function insCalc() {
 // 	var hp=100;
 // 	var age=50;
@@ -43,3 +45,30 @@
 
 
 // insCalc ();
+
+
+// function insCalc() {
+// var age = document.getElementById("age");
+// var hp = document.getElementById("hp");
+// var btn = document.getElementById("button");
+
+// var sum = Number(age) + Number(hp);
+
+            
+// console.log(sum);
+// }
+
+
+// insCalc();
+
+function calcSum () {
+			var age1 = document.getElementById("age").value;
+			var age = Number(age1);
+			var horsepower = document.getElementById("hp").value;
+			var horse_power = Number(horsepower);
+			
+			var sum = age * horse_power;
+			console.log(sum);
+		}
+
+		calcSum()

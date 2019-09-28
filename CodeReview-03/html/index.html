@@ -29,22 +29,27 @@
         <div id="textblock">
             <h1>Car insurance</h1>
             <!-- ------------------------------------------------------------------------------------------- -->
+            <div id="quotebox">   
             <div id="quote">
-                <form>
+                     
                     <h1>Great coverage begins<br>with a great quote</h1>
-                    <p>Your Name</p><input type="text" name="name" value="">
-                    <p>Your Age</p><input type="text" name="name" value="">
-                    <p>Your Country</p> <select type="submit" onClick=return insCalc()>
+
+                    <p>Your Name</p><input type="text" name="name" id="name">
+
+                    <p>Your Age</p><input type="text" name="age" id="age">
+                    
+                    <p>Your Horsepower</p><input id="hp" type="text" name="Horsepower">
+                    
+                    <p>Your Country</p> <select eventonClick=return insCalc()>
                         <option id="austria" value="Austria">Austria</option>
                         <option id="hungary" value="Hungary">Hungary</option>
                         <option id="greece" value="Greece">Greece</option>
-                    </select>
-                    <br>
-                    <p>Your Horsepower</p><input id="hp" type="text" name="Horsepower">
-                    </select>
+                        </select>
+
                     <br>
                     <br>
-                    <button id="button" type="submit" value="Submit">Calculate</button>
+
+                    <button id="button"  value="Submit">Calculate</button>
                     <br>
                     <br>
                     <div>
@@ -52,7 +57,7 @@
                             
                         </script>
                     </div>
-                </form>
+                    </div>
             </div>
         </div>
     </div>
