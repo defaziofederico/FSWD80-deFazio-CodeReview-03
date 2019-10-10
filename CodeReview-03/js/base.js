@@ -1,6 +1,5 @@
  // //var age =document.getElementById["sum"]["age"].value;
  //            var hp = document.forms["sum"]["hp"].value;
-
  //            var sum = Number(age) + Number(hp);
   
  //            var res = document.getElementById('res');
@@ -60,15 +59,40 @@
 
 
 // insCalc();
-
-function calcSum () {
-			var age1 = document.getElementById("age").value;
-			var age = Number(age1);
-			var horsepower = document.getElementById("hp").value;
-			var horse_power = Number(horsepower);
+function calcIns () {
+			var name1 = document.getElementById("name").value;
 			
-			var sum = age * horse_power;
-			console.log(sum);
-		}
+			var age1=document.getElementById("age").value;
+			var age = Number(age1);
+			
+			var country = document.getElementById("selector");
+			var wahl = country.options[country.selectedIndex].value;
 
-		calcSum()
+
+
+			var horsepower = document.getElementById("horsepower").value;
+			var hp = Number(horsepower);
+			
+
+
+			if (wahl=="Austria") {
+				var res =Math.round(hp*100/age+50);
+				document.getElementById("showsum").innerHTML="Dear " + name1 + " , your insurance is extremely cheap and will cost you only " + res + " EUR ";          ;
+			}
+
+			else if (wahl=="Hungary") {
+				var res = Math.round(hp*120/age+100);
+				document.getElementById("showsum").innerHTML="Dear " + name1 +" , your insurance is extremely cheap and will cost you only " + res + " EUR ";          ;
+
+			}
+			else {
+				var res =Math.round(hp*150/(age+3)+50);
+				document.getElementById("showsum").innerHTML="Dear " + name1 +" , your insurance is extremely cheap and will cost you only " + res + " EUR ";         ;
+			}
+
+		}	
+
+		
+
+		document.getElementById("btn").onclick = calcIns;
+		// btn.addEventListener("click", calcSum);

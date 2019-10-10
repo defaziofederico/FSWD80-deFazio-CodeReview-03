@@ -1,0 +1,40 @@
+{
+   "teammember": [
+	
+      {
+         "id":"01",
+         "First_Name": "Tom",
+         "Second_Name": "Araya",
+         "Position": "CEO",
+         "Image":"01.jpg",
+         "What I do": "I enable people to do stuff"
+      },
+	
+      {
+         "id":"02",
+         "First_Name": "Tom",
+         "Second_Name": "Araya",
+         "Position": "CEO",
+         "Image":"01.jpg",
+         "What I do": "I enable people to do stuff"
+      }
+      {
+        "id":"03",
+         "First_Name": "Tom",
+         "Second_Name": "Araya",
+         "Position": "CEO",
+         "Image":"01.jpg",
+         "What I do": "I enable people to do stuff"
+      }
+      {
+         "id":"04",
+         "First_Name": "Tom",
+         "Second_Name": "Araya",
+         "Position": "CEO",
+         "Image":"01.jpg",
+		 "What I do": "I enable people to do stuff"
+      }
+
+
+   ]
+}

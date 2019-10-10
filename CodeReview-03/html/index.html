@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="../css/style.css">
-    <script src="../js/base.js" type="text/javascript" charset="utf-8"></script>
+    
     <title>Home</title>
 </head>
 
@@ -22,55 +22,72 @@
     <nav class=nav>
         <a href="../html/index.html">Home </a>
         <a href="../html/team.html">Team </a>
-    </nav>
-    <!-- -----------------------------------ACTUAL BODY----------------------------------------->
+    </nav> 
+<!--  -----------------------------------ACTUAL BODY-----------------------------------------> 
     <div id="imagecontainer">
-        <img id="traffic" src="../img/traffic.jpg" alt="traffic">
-        <div id="textblock">
-            <h1>Car insurance</h1>
-            <!-- ------------------------------------------------------------------------------------------- -->
-            <div id="quotebox">   
-            <div id="quote">
-                     
-                    <h1>Great coverage begins<br>with a great quote</h1>
+        <img src="../img/traffic.jpg" alt="traffic">
+        <h1 id="insurance">Car insurance</h1>
+        <div id="quotebox">   
+            <div id="quote">  
+                <h1>Great coverage begins<br>with a great quote</h1> 
+                
 
-                    <p>Your Name</p><input type="text" name="name" id="name">
 
-                    <p>Your Age</p><input type="text" name="age" id="age">
+
+
+
+
+
+
+
+                <div class="inputcontainer">
+                    <div class="inputs">
+                        Your name: <br>  
+                        <input id="name" name="name"><br>
+                        Your age: <br>
+                        <input id="age" name="age"><br>
+                    </div>
                     
-                    <p>Your Horsepower</p><input id="hp" type="text" name="Horsepower">
-                    
-                    <p>Your Country</p> <select eventonClick=return insCalc()>
-                        <option id="austria" value="Austria">Austria</option>
-                        <option id="hungary" value="Hungary">Hungary</option>
-                        <option id="greece" value="Greece">Greece</option>
+
+                    <div class="inputs">  
+                        <p>Your Country</p> 
+                        <select id="selector">
+                            <option id="austria" value="Austria">Austria</option>
+                            <option id="hungary" value="Hungary">Hungary</option>
+                            <option id="greece" value="Greece">Greece</option>
                         </select>
 
-                    <br>
-                    <br>
+                        <p>Your HP:</p> <br>
+                        <input id="horsepower"name="horsepower" min="1"><br> 
+                    </div> 
+                </div>           
+                <button id="btn">Calc</button> 
+                <div>
+                    <p id="showsum"></p>
+                </div>
 
-                    <button id="button"  value="Submit">Calculate</button>
-                    <br>
-                    <br>
-                    <div>
-                        <script>
-                            
-                        </script>
-                    </div>
-                    </div>
             </div>
         </div>
     </div>
-    <!-- .......................................... -->
+    
+
+
+
+
+
+
+
+
+
+    <!-- .......................................... < -->
     <div id="uncomplicated">
-        <div id="comp">
-            <h4>Uncomplicated car coverage</h4><br>
-            <p>Understanding your coverage options should not be so hard</p><br>
-            <p>We will guide you through available coverage types,<br> starting with who and what is covered</p><br>
-        </div>
+        
+            <h4>Uncomplicated car coverage</h4>
+            <p>Understanding your coverage options should not be so hard</p>
+            <p>We will guide you through available coverage types, starting with who and what is covered</p>
     </div>
     <br>
-    <!-- .s........................................ -->
+ <!--    <......................................... -->
     <div id="cards">
         <div class="flipcards">
             <p>What comes standard<br>The coverage you need<br>
@@ -111,6 +128,8 @@
             </div>
         </div>
     </footer>
+
+<script src="../js/base.js" type="text/javascript" charset="utf-8"></script> 
 </body>
 
 </html>
